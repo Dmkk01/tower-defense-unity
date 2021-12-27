@@ -19,10 +19,8 @@ public class Waypoint : MonoBehaviour
         _currentPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public Vector3 GetWaypointPosition(int index) {
+        return CurrentPosition + Points[index];
     }
 
     private void OnDrawGizmos() {
