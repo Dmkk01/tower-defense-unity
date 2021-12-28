@@ -9,17 +9,15 @@ public class LevelManager : MonoBehaviour
     public int TotalLives { get; set; }
 
     private void Start() {
-
         TotalLives = lives;
-        
+    }
+
+    private void ReduceLives(Enemy enemy) {
+        TotalLives--;
         if (TotalLives <= 0) {
             TotalLives = 0;
             // Game Over 
         }
-    }
-
-    private void ReduceLives() {
-        TotalLives--;
     } 
 
     private void OnEnable() {
