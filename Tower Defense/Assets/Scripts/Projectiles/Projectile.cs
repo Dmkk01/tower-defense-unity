@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public static Action<Enemy, float> OnEnemyHit;
+
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float damage = 2f;
     [SerializeField] private float minDistanceToDealDamage = 0.1f;
@@ -23,6 +26,7 @@ public class Projectile : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, _enemyTarget.transform.position, moveSpeed * Time.deltaTime);
         float distanceToTarget = (_enemyTarget.transform.position - transform.position).magnitude;
         if (distanceToTarget < minDistanceToDealDamage) {
+            OnEnemyHit?.Invoke(_enemyTarget, damage);
             _enemyTarget.EnemyHealth.DealDamage(damage);
             TurretOwner.ResetTurretProjectile();
             ObjectPooler.ReturnToPool(gameObject);
