@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
 
     public float MoveSpeed { get; set; }
     public Waypoint Waypoint { get; set; }
+    public EnemyHealth EnemyHealth { get; set; }
 
     public Vector3 CurrentPointPosition => Waypoint.GetWaypointPosition(_currentWaypointIndex);
     private int _currentWaypointIndex;
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
     private void Start() {
         _enemyHealth = GetComponent<EnemyHealth>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        EnemyHealth = GetComponent<EnemyHealth>();
         
         _currentWaypointIndex = 0;
         MoveSpeed = moveSpeed;
