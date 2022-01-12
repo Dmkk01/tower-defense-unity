@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7020262bd9b0d4cb4777917ea1897c, type: 3}
-  m_Name: One_missile_turret 1
+  m_Name: Two_missile_turret
   m_EditorClassIdentifier: 
-  TurretPrefab: {fileID: 8730899896221041320, guid: 32b236cd37470a74f96d3db2a98c2067, type: 3}
+  TurretPrefab: {fileID: 287417161215826698, guid: 61f29c60deb19364c91bfd9510e18ed1, type: 3}
   TurretShopCost: 10
-  TurretShopSprite: {fileID: 21300000, guid: 6253f2d583fd9bb418c2c14b01c271e2, type: 3}
+  TurretShopSprite: {fileID: 21300000, guid: f884f7de15df3ac44aac883467b3b6ae, type: 3}
