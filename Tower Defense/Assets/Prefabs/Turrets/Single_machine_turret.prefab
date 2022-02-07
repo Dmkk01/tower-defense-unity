@@ -109,10 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5345c2a6ea493ff43bce6ef6960cdda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeInitialCost: 0
-  upgradeCostIncremental: 0
-  damageIncremental: 0
-  delayReduce: 0
+  upgradeInitialCost: 10
+  upgradeCostIncremental: 10
+  damageIncremental: 10
+  delayReduce: 0.01
   sellPert: 0.709
 --- !u!1 &1993615699807064507
 GameObject:

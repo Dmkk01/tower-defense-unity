@@ -8,6 +8,7 @@ public class Turret : MonoBehaviour
 
     public Enemy CurrentEnemyTarget { get; set; }
     public TurretUpgrade TurretUpgrade { get; set; }
+    public float AttackRange => attackRange;
 
     private bool _gameStarted;
     private List<Enemy> _enemies;

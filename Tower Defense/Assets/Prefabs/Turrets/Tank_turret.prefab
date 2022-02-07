@@ -101,7 +101,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1008709021
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ce8cc150eda56b6429ed7ba39982bf28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 3102729990422355911}
   - component: {fileID: 3102729990422355910}
   - component: {fileID: 3102729990422355909}
+  - component: {fileID: -4724173310665986806}
   m_Layer: 0
   m_Name: Tank_turret
   m_TagString: Untagged
@@ -208,6 +209,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 230312577402533582, guid: 7a5e151a39512244ba09d97df0d86f6d, type: 3}
   poolSize: 10
+--- !u!114 &-4724173310665986806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102729990422355908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5345c2a6ea493ff43bce6ef6960cdda4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeInitialCost: 10
+  upgradeCostIncremental: 10
+  damageIncremental: 10
+  delayReduce: 0.01
+  sellPert: 0.709
 --- !u!1 &3102729990857973153
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +295,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1008709021
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 2157dd6938683344bbf2b209fad286ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -359,7 +377,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1008709021
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 77ca4fb3ee38ff54aae5333298d3ec2e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
