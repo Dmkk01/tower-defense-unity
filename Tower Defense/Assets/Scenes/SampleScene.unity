@@ -462,7 +462,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 143453222}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1424836296}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SellTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &143453222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6396,9 +6408,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: -7.4735446, y: -0.00000006519258, z: 0}
-  - {x: 0.00000008940697, y: 3.5401, z: 0}
-  - {x: 7.1490846, y: 0.5030912, z: 0}
+  - {x: -8.521951, y: 5.9787517, z: 0}
+  - {x: -8.52893, y: -3.1470342, z: 0}
+  - {x: 0.3769442, y: -3.2088351, z: 0}
+  - {x: 0.4052794, y: 1.4381566, z: 0}
+  - {x: -4.468395, y: 1.6365035, z: 0}
+  - {x: -4.411724, y: 4.5833764, z: 0}
+  - {x: 8.650857, y: 4.668384, z: 0}
+  - {x: 8.537515, y: -5.5890007, z: 0}
 --- !u!1001 &1531858945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7904,7 +7921,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Upgrade
+  m_text: Sell
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
