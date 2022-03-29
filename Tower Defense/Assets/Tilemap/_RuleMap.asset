@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: _RuleMap
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -172109923268554218, guid: 81f3affd9b1b76d4da4cfc2c2caa2390, type: 3}
+  m_DefaultSprite: {fileID: -172109923268554218, guid: 4767fcebbc5f0ca4ea12a504f6a10eb6, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 0
     m_Sprites:
-    - {fileID: 6732742066884364779, guid: 81f3affd9b1b76d4da4cfc2c2caa2390, type: 3}
+    - {fileID: 6732742066884364779, guid: 4767fcebbc5f0ca4ea12a504f6a10eb6, type: 3}
     m_GameObject: {fileID: 0}
     m_AnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -36,7 +36,7 @@ MonoBehaviour:
     m_RuleTransform: 1
   - m_Id: 1
     m_Sprites:
-    - {fileID: -135665275369439952, guid: 81f3affd9b1b76d4da4cfc2c2caa2390, type: 3}
+    - {fileID: -135665275369439952, guid: 4767fcebbc5f0ca4ea12a504f6a10eb6, type: 3}
     m_GameObject: {fileID: 0}
     m_AnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -50,7 +50,7 @@ MonoBehaviour:
     m_RuleTransform: 1
   - m_Id: 2
     m_Sprites:
-    - {fileID: -1382599404536372767, guid: 81f3affd9b1b76d4da4cfc2c2caa2390, type: 3}
+    - {fileID: -1382599404536372767, guid: 4767fcebbc5f0ca4ea12a504f6a10eb6, type: 3}
     m_GameObject: {fileID: 0}
     m_AnimationSpeed: 1
     m_PerlinScale: 0.5

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,11 +16,11 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 10f;
 
     public float CurrentHealth { get; set; }
-
+    
     private Image _healthBar;
     private Enemy _enemy;
-
-    void Start()
+    
+    private void Start()
     {
         CreateHealthBar();
         CurrentHealth = initialHealth;
@@ -28,15 +28,19 @@ public class EnemyHealth : MonoBehaviour
         _enemy = GetComponent<Enemy>();
     }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.P)) {
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
             DealDamage(5f);
         }
 
-        _healthBar.fillAmount = Mathf.Lerp(_healthBar.fillAmount, CurrentHealth/maxHealth, Time.deltaTime * 10f);
+        _healthBar.fillAmount = Mathf.Lerp(_healthBar.fillAmount, 
+            CurrentHealth / maxHealth, Time.deltaTime * 10f);
     }
 
-    private void CreateHealthBar() {
+    private void CreateHealthBar()
+    {
         GameObject newBar = Instantiate(healthBarPrefab, barPosition.position, Quaternion.identity);
         newBar.transform.SetParent(transform);
 
@@ -44,22 +48,31 @@ public class EnemyHealth : MonoBehaviour
         _healthBar = container.FillAmountImage;
     }
 
-    public void DealDamage(float damageReceived) {
+    public void DealDamage(float damageReceived)
+    {
         CurrentHealth -= damageReceived;
-        if (CurrentHealth <= 0) {
+        if (CurrentHealth <= 0)
+        {
             CurrentHealth = 0;
             Die();
-        } else {
+        }
+        else
+        {
             OnEnemyHit?.Invoke(_enemy);
         }
     }
 
-    public void ResetHealth() {
+    public void ResetHealth()
+    {
         CurrentHealth = initialHealth;
         _healthBar.fillAmount = 1f;
     }
-
-    private void Die() {
+    
+    private void Die()
+    {
+        AchievementManager.Instance.AddProgress("Kill20", 1);
+        AchievementManager.Instance.AddProgress("Kill50", 1);
+        AchievementManager.Instance.AddProgress("Kill100", 1);
         OnEnemyKilled?.Invoke(_enemy);
     }
 }

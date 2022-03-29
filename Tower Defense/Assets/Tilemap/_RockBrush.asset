@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: _RockBrush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: 9301a71e4a723b044abb7e554108d0c6, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -35,10 +35,9 @@ MonoBehaviour:
   m_Size: {x: 1, y: 1, z: 1}
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
-  m_FloodFillContiguousOnly: 1
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
   m_Prefabs:
-  - {fileID: 592535443386120051, guid: 5716d87ace74ad34b9330cea37519dd6, type: 3}
-  - {fileID: 6869873699647886314, guid: f693a3bb9417c724f86eb9642d9587f2, type: 3}
-  - {fileID: 4004391798889861172, guid: 83bdd00788f54cb439bd0318f52b1e90, type: 3}
+  - {fileID: 8826747310352080577, guid: efbc97403d5ccea46a367744e48de1c7, type: 3}
+  - {fileID: 6448045802205311040, guid: fc4e4f62544466341aa482392d50db9f, type: 3}
+  - {fileID: 6532549313055909280, guid: 6d54ca310629c2249be171e267cb8ebf, type: 3}
   m_PerlinScale: 0.5

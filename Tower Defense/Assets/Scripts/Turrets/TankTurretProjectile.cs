@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,20 +6,22 @@ public class TankTurretProjectile : TurretProjectile
 {
     protected override void Update()
     {
-        if (Time.time > _nextAttackTime) {
-            if (_turret.CurrentEnemyTarget != null && _turret.CurrentEnemyTarget.EnemyHealth.CurrentHealth > 0f) {
+        if (Time.time > _nextAttackTime)
+        {
+            if (_turret.CurrentEnemyTarget != null 
+                && _turret.CurrentEnemyTarget.EnemyHealth.CurrentHealth > 0)
+            {
                 FireProjectile(_turret.CurrentEnemyTarget);
             }
-
+            
             _nextAttackTime = Time.time + delayBtwAttacks;
         }
     }
 
-    protected override void LoadProjectile()
-    {
-    }
+    protected override void LoadProjectile() { }
 
-    private void FireProjectile(Enemy enemy) {
+    private void FireProjectile(Enemy enemy)
+    {
         GameObject instance = _pooler.GetInstanceFromPool();
         instance.transform.position = projectileSpawnPosition.position;
 
